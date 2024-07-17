@@ -1,0 +1,30 @@
+apply plugin: 'com.huawei.ohos.library'
+
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides-V3/ide_debug_device-0000001053822404-V3#section1112183053510
+ohos {
+    compileSdkVersion 6
+    defaultConfig {
+        compatibleSdkVersion 6
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13.1'
+
+    //okhttp3
+    api 'com.squareup.okhttp3:okhttp:4.2.0'
+    api "com.squareup.okhttp3:logging-interceptor:3.10.0"
+    //retrofit2
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+}

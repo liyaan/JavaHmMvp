@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <Text
+        ohos:height="35vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="left"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:text="账户"
+        ohos:text_size="20fp"
+        ohos:left_margin="20vp"
+        ohos:top_margin="20vp"
+        ohos:text_color="#000000"
+        />
+    <TextField
+        ohos:width="match_parent"
+        ohos:height="40vp"
+        ohos:id="$+id:register_edit_account"
+        ohos:layout_alignment="left"
+        ohos:text_size="20fp"
+        ohos:right_margin="20vp"
+        ohos:left_margin="20vp"
+        ohos:text_color="#000000"
+        ohos:top_margin="25vp"
+        ohos:basement="#000099"
+        ohos:hint="请输入账号"
+        />
+
+
+
+    <Text
+        ohos:height="35vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="left"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:text="密码"
+        ohos:text_size="20fp"
+        ohos:left_margin="20vp"
+        ohos:top_margin="20vp"
+        ohos:text_color="#000000"
+        />
+    <TextField
+        ohos:width="match_parent"
+        ohos:height="40vp"
+        ohos:id="$+id:register_edit_password"
+        ohos:layout_alignment="left"
+        ohos:text_size="20fp"
+        ohos:right_margin="20vp"
+        ohos:left_margin="20vp"
+        ohos:text_color="#000000"
+        ohos:top_margin="25vp"
+        ohos:basement="#000099"
+        ohos:hint="请输入密码"
+        />
+
+    <Button
+        ohos:id="$+id:register_btn"
+        ohos:width="match_parent"
+        ohos:height="50vp"
+        ohos:text="注 册"
+        ohos:background_element="$graphic:button_element"
+        ohos:text_size="20fp"
+        ohos:text_color="#FFFFFF"
+        ohos:top_margin="25vp"
+        ohos:right_margin="20vp"
+        ohos:left_margin="20vp"
+        />
+
+</DirectionalLayout>

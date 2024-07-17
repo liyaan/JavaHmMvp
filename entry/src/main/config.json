@@ -1,0 +1,67 @@
+{
+  "app": {
+    "bundleName": "com.liyaan.study",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {
+  },
+  "module": {
+    "package": "com.liyaan.study",
+    "name": ".MyApplication",
+    "mainAbility": "com.liyaan.study.WelComeAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.liyaan.study.WelComeAbility",
+        "description": "$string:mainability_description",
+        "icon": "$media:icon",
+        "label": "$string:entry_MainAbility",
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "visible": true,
+        "type": "page"
+      }
+
+    ],
+    "reqPermissions": [
+      {
+        "reason": "",
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar"
+        }
+      ]
+    }
+  }
+}
