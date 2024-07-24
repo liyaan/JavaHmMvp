@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <DependentLayout
+        ohos:height="48vp"
+        ohos:width="match_parent">
+
+        <Text
+            ohos:id="$+id:sampleHeaderTv"
+            ohos:text_size="14fp"
+            ohos:vertical_center="true"
+            ohos:text_color="#3E3E3E"
+            ohos:max_text_lines="1"
+            ohos:left_padding="8vp"
+            ohos:right_padding="8vp"
+            ohos:background_element="#ffffff"
+            ohos:horizontal_center="true"
+            ohos:truncation_mode="ellipsis_at_end"
+            ohos:height="48vp"
+            ohos:width="match_parent"/>
+
+
+
+        <Image
+            ohos:scale_mode="zoom_center"
+            ohos:image_src="$graphic:ic_expansion_header_indicator_grey_24dp"
+            ohos:id="$+id:headerIndicator"
+            ohos:align_parent_right="true"
+            ohos:vertical_center="true"
+            ohos:height="24vp"
+            ohos:visibility="hide"
+            ohos:left_margin="16vp"
+            ohos:width="24vp"/>
+
+
+
+    </DependentLayout>
+<!--    <com.florent37.github.com.expansionpanel.ExpansionHeader-->
+<!--        ohos:id="$+id:sampleHeader"-->
+<!--        ohos:background_element="#cecece"-->
+<!--        ohos:width="match_content" ohos:height="match_content">-->
+
+<!--        <DependentLayout-->
+<!--            ohos:background_element="#ffffff"-->
+<!--            ohos:height="48vp"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:left_padding="16vp"-->
+<!--            ohos:right_padding="16vp">-->
+
+<!--            <Text-->
+<!--                ohos:id="$+id:sampleHeaderTv"-->
+<!--                ohos:text_size="20fp"-->
+<!--                ohos:vertical_center="true"-->
+<!--                ohos:text_color="#3E3E3E"-->
+<!--                ohos:height="match_content"-->
+<!--                ohos:right_margin="30vp"-->
+<!--                ohos:max_text_lines="1"-->
+<!--                ohos:truncation_mode="ellipsis_at_end"-->
+<!--                ohos:width="match_content"/>-->
+
+
+
+<!--            <Image-->
+<!--                ohos:scale_mode="zoom_center"-->
+<!--                ohos:image_src="$graphic:ic_expansion_header_indicator_grey_24dp"-->
+<!--                ohos:id="$+id:headerIndicator"-->
+<!--                ohos:align_parent_right="true"-->
+<!--                ohos:vertical_center="true"-->
+<!--                ohos:height="24vp"-->
+<!--                ohos:left_margin="16vp"-->
+<!--                ohos:width="24vp"/>-->
+
+
+
+<!--        </DependentLayout>-->
+
+
+<!--    </com.florent37.github.com.expansionpanel.ExpansionHeader>-->
+
+
+<!--    <com.florent37.github.com.expansionpanel.ExpansionLayout-->
+<!--        ohos:id="$+id:expansionLayout"-->
+<!--        ohos:width="match_parent" ohos:height="match_content">-->
+<!--        <DirectionalLayout-->
+<!--            ohos:id="$+id:container"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:orientation="vertical"-->
+<!--            ohos:height="match_content">-->
+<!--            <Text-->
+<!--                ohos:id="$+id:expansionLayoutTv"-->
+<!--                ohos:background_element="#EEE"-->
+<!--                ohos:text_color="#909090"-->
+<!--                ohos:text_size="14fp"-->
+<!--                ohos:text="content"-->
+<!--                ohos:text_alignment="center"-->
+<!--                ohos:height="100vp"-->
+<!--                ohos:width="match_parent"/>-->
+
+<!--        </DirectionalLayout>-->
+
+<!--    </com.florent37.github.com.expansionpanel.ExpansionLayout>-->
+</DirectionalLayout>

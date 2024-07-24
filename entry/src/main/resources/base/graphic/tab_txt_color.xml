@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<state-container
+xmlns:ohos="http://schemas.huawei.com/res/ohos">
+<item
+    ohos:element="$color:app_theme_color"
+    ohos:state="component_state_checked"/>
+<item
+    ohos:element="$color:color_main_gray"
+    ohos:state="component_state_empty"/>
+</state-container>

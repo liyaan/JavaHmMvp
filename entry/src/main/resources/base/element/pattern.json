@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    {
+      "name": "base_radio",
+      "value": [
+
+        {
+          "name": "check_element",
+          "value": "null"
+        },
+        {
+          "name": "weight",
+          "value": "1"
+        },
+        {
+          "name": "top_padding",
+          "value": "5vp"
+        },
+        {
+          "name": "text_size",
+          "value": "12fp"
+        },
+        {
+          "name": "text_color_on",
+          "value": "$color:app_theme_color"
+        },
+        {
+          "name": "text_color_off",
+          "value": "$color:color_main_gray"
+        }
+      ]
+    }
+  ]
+}

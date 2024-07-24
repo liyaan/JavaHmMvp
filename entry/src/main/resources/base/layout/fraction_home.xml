@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/hap/res-auto"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:background_element="#f7f7f7"
+    ohos:orientation="vertical">
+    <com.yan.zrefreshview.ZRefreshView
+        ohos:id="$+id:zrefresh_view"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        app:AutoLoadMore="true"
+        app:EnableLoadMore="true"
+        app:EnableRefresh="true"
+        app:RefreshBgColor="#ffffff"
+        app:RefreshTextColor="#000000"
+        >
+    <com.example.utils.component.HeaderAndFooter
+        ohos:id="$+id:listContainer"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        app:AutoLoadMore="true"
+        app:EnableLoadMore="true"
+        app:EnableRefresh="true"
+        />
+    </com.yan.zrefreshview.ZRefreshView>
+</DirectionalLayout>

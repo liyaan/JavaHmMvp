@@ -1,13 +1,14 @@
 package com.liyaan.study.interceptor;
 
-import okhttp3.Headers;
+import com.liyaan.study.common.Consts;
+import ohos.data.preferences.Preferences;
 import okhttp3.Interceptor;
-import okhttp3.Request;
 import okhttp3.Response;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
-import java.util.Set;
+
+import static com.liyaan.study.MyApplication.mPreferences;
 
 public class InterceptorCookie implements Interceptor {
     @NotNull
@@ -22,8 +23,22 @@ public class InterceptorCookie implements Interceptor {
             // 处理cookie，例如保存到SharedPreferences或数据库中
             // 这里仅为示例，打印出来
             System.out.println("Cookies: " + cookies);
+            settingCookie(cookies);
         }
 
         return response;
+    }
+    private void settingCookie(String cookie){
+        //token_pass_wanandroid_com=08937b953a34ae42f65e461149b23129;
+        // Domain=wanandroid.com; Expires=Fri, 16-Aug-2024 03:08:05 GMT; Path=/
+        String[] cookies = cookie.split(";");
+        String[] tokens = cookies[0].split("=");
+        //token_pass_wanandroid_com  08937b953a34ae42f65e461149b23129
+        if (tokens[0].contains("token_pass")){
+            System.out.println("Cookies: " + tokens[0]+"  "+tokens[1]);
+            mPreferences.putString(Consts.TOKEN_KEY, tokens[0]);
+            mPreferences.putString(Consts.TOKEN_VALUE, tokens[1]);
+        }
+
     }
 }

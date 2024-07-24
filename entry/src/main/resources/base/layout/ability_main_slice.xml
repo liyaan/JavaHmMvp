@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+
+
+    <RadioContainer
+        ohos:id="$+id:radioContainer"
+        ohos:width="match_parent"
+        ohos:height="50vp"
+        ohos:orientation="horizontal"
+        ohos:align_parent_bottom="true"
+        ohos:left_padding="5vp"
+        ohos:right_padding="5vp"
+        ohos:background_element="#fff">
+        <RadioButton
+            ohos:id="$+id:home"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:theme="$pattern:base_radio"
+            ohos:text="首页"
+            ohos:marked="true"
+            ohos:element_top="$graphic:tab_button_home"
+            />
+        <RadioButton
+            ohos:id="$+id:school"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:theme="$pattern:base_radio"
+            ohos:text="家校互动"
+            ohos:element_top="$graphic:tab_button_hd"
+            />
+
+        <RadioButton
+            ohos:id="$+id:study"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:theme="$pattern:base_radio"
+            ohos:text="学习专区"
+            ohos:element_top="$graphic:tab_button_square"
+            />
+
+        <RadioButton
+            ohos:id="$+id:discover"
+            ohos:theme="$pattern:base_radio"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:text="发现"
+            ohos:element_top="$graphic:tab_button_discover"
+            />
+        <RadioButton
+            ohos:id="$+id:oneself"
+            ohos:width="match_parent"
+            ohos:height="match_parent"
+            ohos:theme="$pattern:base_radio"
+            ohos:text="个人中心"
+            ohos:element_top="$graphic:tab_button_me"
+            />
+    </RadioContainer>
+
+    <StackLayout
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:background_element="#a0b0c0"
+        ohos:bottom_margin="50vp"
+        ohos:id="$+id:stackLayout"/>
+</DependentLayout>

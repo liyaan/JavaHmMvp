@@ -1,10 +1,11 @@
 package com.liyaan.study;
 
 import com.example.utils.base.BaseAbility;
+import com.example.utils.base.BaseFractionAbility;
 import com.liyaan.study.slice.WelComeAbilitySlice;
 
 
-public class WelComeAbility extends BaseAbility {
+public class WelComeAbility extends BaseFractionAbility {
 
 
     @Override

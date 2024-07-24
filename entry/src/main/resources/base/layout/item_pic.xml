@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:margin="10vp">
+
+    <Image
+        ohos:id="$+id:avatar"
+        ohos:height="100vp"
+        ohos:width="100vp"
+        ohos:scale_mode="clip_center"
+        ohos:image_src="$media:dd"
+        />
+    <Text
+        ohos:id="$+id:title"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text_color="$color:black"
+        ohos:text_size="20fp"
+        ohos:left_margin="110vp"
+        ohos:truncation_mode="ellipsis_at_end"
+        ohos:max_text_lines="1"/>
+    <Text
+        ohos:id="$+id:chapterName"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text_color="$color:color_main_gray"
+        ohos:text_size="18fp"
+        ohos:below="$id:title"
+        ohos:top_margin="5vp"
+        ohos:left_margin="110vp"
+        ohos:truncation_mode="ellipsis_at_end"
+        ohos:max_text_lines="1"/>
+
+    <Text
+        ohos:id="$+id:niceShareDate"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text_color="$color:color_main_gray"
+        ohos:text_size="18fp"
+        ohos:below="$id:chapterName"
+        ohos:top_margin="5vp"
+        ohos:left_margin="110vp"
+        ohos:truncation_mode="ellipsis_at_end"
+        ohos:max_text_lines="1"/>
+</DependentLayout>

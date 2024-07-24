@@ -4,6 +4,7 @@ import com.example.utils.base.BasePresenter;
 import com.example.utils.net.RxScheduler;
 import com.liyaan.study.entity.BaseObjectBean;
 import com.liyaan.study.entity.resp.LoginBean;
+import com.liyaan.study.interceptor.BaseObserver;
 import com.liyaan.study.login.contract.LoginContract;
 import com.liyaan.study.login.model.LoginModel;
 import io.reactivex.rxjava3.annotations.NonNull;
@@ -42,6 +43,37 @@ public class LoginPresenter extends BasePresenter<LoginContract.View> implements
 
                     @Override
                     public void onComplete() {
+                        mView.hideLoading();
+                    }
+                });
+    }
+
+    @Override
+    public void collect(int page) {
+        if (!isViewAttached()) {
+            return;
+        }
+        model.collect(page)
+                .compose(RxScheduler.Obs_io_main())
+                .subscribe(new BaseObserver<BaseObjectBean<String>>() {
+                    @Override
+                    public void onSubscribe(@NonNull Disposable d) {
+                        mView.showLoading();
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        mView.hideLoading();
+                    }
+
+                    @Override
+                    public void next(BaseObjectBean<String> loginBeanBaseObjectBean) {
+                        mView.onCollect(loginBeanBaseObjectBean);
+                    }
+
+                    @Override
+                    public void error(Throwable e) {
+                        mView.onError(e.getMessage());
                         mView.hideLoading();
                     }
                 });

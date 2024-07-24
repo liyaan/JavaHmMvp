@@ -15,7 +15,7 @@ public class BaseObjectBean<T> {
 
     private int errorCode;
     private String errorMsg;
-    private T result;
+    private T data;
 
     public int getErrorCode() {
         return errorCode;
@@ -33,12 +33,12 @@ public class BaseObjectBean<T> {
         this.errorMsg = errorMsg;
     }
 
-    public T getResult() {
-        return result;
+    public T getData() {
+        return data;
     }
 
-    public void setResult(T result) {
-        this.result = result;
+    public void setData(T data) {
+        this.data = data;
     }
 
 

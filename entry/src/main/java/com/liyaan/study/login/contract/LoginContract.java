@@ -8,6 +8,7 @@ import io.reactivex.rxjava3.core.Observable;
 public interface LoginContract {
     interface Model {
         Observable<BaseObjectBean<LoginBean>> login(String username, String password);
+        Observable<BaseObjectBean<String>> collect(int page);
     }
 
     interface View extends BaseView {
@@ -21,6 +22,7 @@ public interface LoginContract {
         void onError(String errMessage);
 
         void onSuccess(BaseObjectBean<LoginBean> bean);
+        void onCollect(BaseObjectBean<String> bean);
     }
 
     interface Presenter {
@@ -31,5 +33,6 @@ public interface LoginContract {
          * @param password
          */
         void login(String username, String password);
+        void collect(int page);
     }
 }

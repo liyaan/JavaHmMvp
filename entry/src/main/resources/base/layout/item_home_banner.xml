@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="200vp"
+    ohos:width="match_parent"
+    ohos:background_element="$color:black"
+    ohos:orientation="vertical">
+
+    <com.liyaan.study.component.CustomPageSlider
+        ohos:id="$+id:page_slider"
+        ohos:height="200vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="horizontal_center"/>
+    <PageSliderIndicator
+        ohos:width="match_parent"
+        ohos:height="20vp"
+        ohos:bottom_margin="16vp"
+        ohos:id="$+id:page_slider_indicator"
+        ohos:align_parent_bottom="true"
+        ohos:layout_alignment="horizontal_center"/>
+</DependentLayout>

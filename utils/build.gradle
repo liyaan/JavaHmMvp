@@ -27,4 +27,11 @@ dependencies {
     api 'com.squareup.retrofit2:retrofit:2.9.0'
     api 'com.squareup.retrofit2:converter-gson:2.9.0'
     api 'com.squareup.retrofit2:adapter-rxjava3:2.9.0'
+
+    api 'com.gitee.chinasoft_ohos:Ohos-MaterialRefreshLayout:1.0.1'
+    api 'io.openharmony.tpc.thirdlib:glide:1.1.5'
+
+    api 'io.gitee.yandeqing:zrefreshview:1.0.3'
+
+    api 'com.gitee.chinasoft_ohos:ExpansionPanel:1.0.1'
 }

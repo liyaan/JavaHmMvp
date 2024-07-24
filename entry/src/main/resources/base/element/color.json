@@ -1,0 +1,21 @@
+{
+  "color": [
+    {
+      "name": "app_theme_color",
+      "value": "#0599D9"
+    },
+    {
+      "name": "color_main_gray",
+      "value": "#999999"
+    } ,
+    {
+      "name": "black",
+      "value": "#000000"
+    }
+  ,
+    {
+      "name": "gray00",
+      "value": "#99ffffff"
+    }
+  ]
+}

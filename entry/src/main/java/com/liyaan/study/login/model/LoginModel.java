@@ -21,4 +21,10 @@ public class LoginModel implements LoginContract.Model {
         return mApiService.login(username,password);
     }
 
+    @Override
+    public Observable<BaseObjectBean<String>> collect(int page) {
+        System.out.println("MainModel login 被调用");
+        return mApiService.collect(page);
+    }
+
 }

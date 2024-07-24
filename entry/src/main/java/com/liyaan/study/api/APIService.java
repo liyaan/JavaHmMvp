@@ -3,9 +3,7 @@ package com.liyaan.study.api;
 import com.liyaan.study.entity.BaseObjectBean;
 import com.liyaan.study.entity.resp.LoginBean;
 import io.reactivex.rxjava3.core.Observable;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
-import retrofit2.http.POST;
+import retrofit2.http.*;
 
 public interface APIService {
 
@@ -20,5 +18,9 @@ public interface APIService {
     @POST("user/login")
     Observable<BaseObjectBean<LoginBean>> login(@Field("username") String username,
                                                 @Field("password") String password);
+
+
+    @GET("lg/collect/list/{page}/json")
+    Observable<BaseObjectBean<String>> collect(@Path("page") int page);
 
 }

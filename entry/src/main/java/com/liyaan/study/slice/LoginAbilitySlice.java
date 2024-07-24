@@ -3,6 +3,7 @@ package com.liyaan.study.slice;
 import com.example.utils.base.BaseMvpAbilitySlice;
 import com.example.utils.dialog.ToastUtils;
 import com.liyaan.study.ResourceTable;
+import com.liyaan.study.common.Consts;
 import com.liyaan.study.entity.BaseObjectBean;
 import com.liyaan.study.entity.resp.LoginBean;
 import com.liyaan.study.login.contract.LoginContract;
@@ -12,6 +13,8 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.components.*;
 import ohos.agp.utils.TextAlignment;
 import ohos.agp.window.dialog.ToastDialog;
+
+import static com.liyaan.study.MyApplication.mPreferences;
 
 public class LoginAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implements LoginContract.View {
     private TextField mTextUsername, mTextPassword;
@@ -48,12 +51,26 @@ public class LoginAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> imple
         mRegisterBtn.setClickedListener(component -> {
 //            ToastUtils.oneShow(LoginAbilitySlice.this,"注册功能", TextAlignment.BOTTOM);
             present(new RegisterAbilitySlice(),new Intent());
+
         });
     }
 
     @Override
     public void onSuccess(BaseObjectBean<LoginBean> bean) {
         ToastUtils.show(this,bean.getErrorCode()+" "+bean.getErrorMsg());
+        if (bean.getErrorCode()==0){
+            if (bean.getData()!=null){
+                mPreferences.putString(Consts.LOGIN_USERNAME,mUsername);
+                mPreferences.putString(Consts.LOGIN_PASSWORD,mPassword);
+                mPresenter.collect(0);
+            }
+
+        }
+    }
+
+    @Override
+    public void onCollect(BaseObjectBean<String> bean) {
+        System.out.println("Cookies ==== "+bean.getErrorCode());
     }
 
     @Override
