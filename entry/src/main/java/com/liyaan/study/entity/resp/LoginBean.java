@@ -23,7 +23,7 @@ public class LoginBean {
     private String password;
     private int type;
     private String username;
-    private List<?> collectIds;
+//    private List<?> collectIds;
 
     public String getEmail() {
         return email;
@@ -73,11 +73,11 @@ public class LoginBean {
         this.username = username;
     }
 
-    public List<?> getCollectIds() {
-        return collectIds;
-    }
-
-    public void setCollectIds(List<?> collectIds) {
-        this.collectIds = collectIds;
-    }
+//    public List<?> getCollectIds() {
+//        return collectIds;
+//    }
+//
+//    public void setCollectIds(List<?> collectIds) {
+//        this.collectIds = collectIds;
+//    }
 }

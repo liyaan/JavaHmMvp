@@ -3,9 +3,11 @@ package com.liyaan.study.provider;
 
 import com.bumptech.glide.Glide;
 import com.liyaan.study.ResourceTable;
+import com.liyaan.study.common.OnItemOnClick;
 import com.liyaan.study.entity.resp.PageSliderBean;
 import ohos.agp.components.*;
 import ohos.app.Context;
+import ohos.biometrics.authentication.IFaceAuthentication;
 
 import java.util.List;
 
@@ -49,6 +51,14 @@ public class PageProvider extends PageSliderProvider {
         Glide.with(mContext)
                 .load(item.getImagePath()).into(image);
         text.setText(item.getTitle());
+        component.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                if (mOnItemOnClick!=null){
+                    mOnItemOnClick.itemOnClick(i);
+                }
+            }
+        });
         componentContainer.addComponent(component);
         return component;
     }
@@ -61,5 +71,12 @@ public class PageProvider extends PageSliderProvider {
     @Override
     public boolean isPageMatchToObject(Component component, Object o) {
         return false;
+    }
+
+
+    private OnItemOnClick mOnItemOnClick;
+
+    public void setOnItemOnClick(OnItemOnClick onItemOnClick) {
+        this.mOnItemOnClick = onItemOnClick;
     }
 }

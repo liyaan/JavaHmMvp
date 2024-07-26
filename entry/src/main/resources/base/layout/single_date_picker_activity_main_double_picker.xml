@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:gray_light"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:height="45vp"
+        ohos:width="match_parent"
+        ohos:background_element="$color:picker_background"
+        ohos:left_padding="23vp"
+        ohos:text="Picker"
+        ohos:text_color="$color:white"
+        ohos:text_size="16fp"
+        ohos:text_weight="700" />
+
+    <DirectionalLayout
+        ohos:id="$+id:singleLayout"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$graphic:ic_event_available_black_24dp"
+            ohos:left_margin="20vp"
+            ohos:right_margin="20vp" />
+
+        <Text
+            ohos:id="$+id:singleText"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:multiple_lines="true"
+            ohos:text="Click me to open single dialog"
+            ohos:text_color="$color:textColor"
+            ohos:text_size="14fp" />
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:doubleLayout"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$graphic:ic_event_available_black_24dp"
+            ohos:left_margin="20vp"
+            ohos:right_margin="20vp" />
+
+        <Text
+            ohos:id="$+id:doubleText"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:multiple_lines="true"
+            ohos:text="Click me to open double dialog"
+            ohos:text_color="$color:textColor"
+            ohos:text_size="14fp" />
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:singleTimeLayout"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$graphic:ic_event_available_black_24dp"
+            ohos:left_margin="20vp"
+            ohos:right_margin="20vp" />
+
+        <Text
+            ohos:id="$+id:singleTimeText"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:multiple_lines="true"
+            ohos:text="Click me to open single dialog for TIME only"
+            ohos:text_color="$color:textColor"
+            ohos:text_size="14fp" />
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:singleDateLayout"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$graphic:ic_event_available_black_24dp"
+            ohos:left_margin="20vp"
+            ohos:right_margin="20vp" />
+
+        <Text
+            ohos:id="$+id:singleDateText"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:multiple_lines="true"
+            ohos:text="Click me to open single dialog for DATE only"
+            ohos:text_color="$color:textColor"
+            ohos:text_size="14fp" />
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:singleDateLocaleLayout"
+        ohos:height="60vp"
+        ohos:width="match_parent"
+        ohos:alignment="vertical_center"
+        ohos:orientation="horizontal">
+
+        <Image
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$graphic:ic_event_available_black_24dp"
+            ohos:left_margin="20vp"
+            ohos:right_margin="20vp" />
+
+        <Text
+            ohos:id="$+id:singleDateLocaleText"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:center_in_parent="true"
+            ohos:multiple_lines="true"
+            ohos:text="Click me to open single dialog for DATE with German Locale"
+            ohos:text_color="$color:textColor"
+            ohos:text_size="14fp" />
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

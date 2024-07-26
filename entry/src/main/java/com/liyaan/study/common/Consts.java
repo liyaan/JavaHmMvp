@@ -5,4 +5,5 @@ public class Consts {
     public final static String TOKEN_VALUE="token_value";
     public final static String LOGIN_USERNAME="login_username";
     public final static String LOGIN_PASSWORD="login_password";
+    public final static String WEB_URL="web_url";
 }

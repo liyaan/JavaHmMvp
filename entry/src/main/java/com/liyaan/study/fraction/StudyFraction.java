@@ -1,7 +1,9 @@
 package com.liyaan.study.fraction;
 
 import com.example.utils.base.BaseMvpFraction;
+import com.example.utils.component.decoration.Utils;
 import com.liyaan.study.ResourceTable;
+import com.liyaan.study.common.Consts;
 import com.liyaan.study.entity.BaseObjectBean;
 import com.liyaan.study.entity.resp.TreeJsonDataBean;
 import com.liyaan.study.entity.resp.TreeJsonDataChildren;
@@ -11,7 +13,11 @@ import com.liyaan.study.main.study.contract.StudyContract;
 import com.liyaan.study.main.study.presenter.StudyPresenter;
 import com.liyaan.study.provider.StudyChildProvider;
 import com.liyaan.study.provider.StudyProvider;
+import com.liyaan.study.slice.CommonWebViewAbilitySlice;
+import com.liyaan.study.slice.StudySecondAbilitySlice;
 import com.yan.zrefreshview.ZRefreshView;
+import ohos.aafwk.ability.AbilitySlice;
+import ohos.aafwk.content.Intent;
 import ohos.agp.components.Component;
 import ohos.agp.components.ListContainer;
 import ohos.agp.components.Text;
@@ -33,6 +39,12 @@ public class StudyFraction extends BaseMvpFraction<StudyPresenter> implements St
 
     private Text mListChildContainerTv;
     private int mPosition=0;
+
+    private AbilitySlice mAbilitySlice;
+
+    public StudyFraction(AbilitySlice abilitySlice) {
+        this.mAbilitySlice = abilitySlice;
+    }
     @Override
     public int getLayoutId() {
         return ResourceTable.Layout_fraction_study_center;
@@ -65,7 +77,14 @@ public class StudyFraction extends BaseMvpFraction<StudyPresenter> implements St
 
             System.out.println("mPosition2222 = "+mPosition);
         });
-
+        mListChildContainer.setItemClickedListener(new ListContainer.ItemClickedListener() {
+            @Override
+            public void onItemClicked(ListContainer listContainer, Component component, int i, long l) {
+                final Intent intent = new Intent();
+                intent.setParam("cid", mChildList.get(i).getId());
+                mAbilitySlice.present(new StudySecondAbilitySlice(),intent);
+            }
+        });
 
         mZRefreshView.setOnRefreshListener(() -> {
             mZRefreshView.finishRefreshing();

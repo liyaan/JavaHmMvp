@@ -18,7 +18,7 @@ public interface ApiRegisterService {
      */
     @FormUrlEncoded
     @POST("user/register")
-    Observable<BaseObjectBean<String>> register(@Field("username") String username,
+    Observable<BaseObjectBean<LoginBean>> register(@Field("username") String username,
                                                 @Field("password") String password,@Field("repassword") String repassword);
 
 }

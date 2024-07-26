@@ -4,8 +4,11 @@ import com.cjj.MaterialRefreshLayout;
 import com.cjj.MaterialRefreshListener;
 import com.example.utils.base.BaseMvpFraction;
 import com.example.utils.component.HeaderAndFooter;
+import com.example.utils.component.decoration.Utils;
 import com.example.utils.dialog.ToastUtils;
 import com.liyaan.study.ResourceTable;
+import com.liyaan.study.WelComeAbility;
+import com.liyaan.study.common.Consts;
 import com.liyaan.study.common.RefreshHelper;
 import com.liyaan.study.component.CustomPageSlider;
 import com.liyaan.study.entity.BaseObjectBean;
@@ -16,9 +19,12 @@ import com.liyaan.study.main.home.contract.HomeContract;
 import com.liyaan.study.main.home.presenter.HomePresenter;
 import com.liyaan.study.provider.HomeProvider;
 import com.liyaan.study.provider.PageProvider;
+import com.liyaan.study.slice.CommonWebViewAbilitySlice;
 import com.liyaan.study.utils.PageSliderUtils;
 import com.ryan.ohos.extension.nested.component.NestedListContainer;
 import com.yan.zrefreshview.ZRefreshView;
+import ohos.aafwk.ability.AbilitySlice;
+import ohos.aafwk.content.Intent;
 import ohos.agp.components.*;
 import ohos.agp.utils.TextAlignment;
 import ohos.multimodalinput.event.TouchEvent;
@@ -40,6 +46,11 @@ public class HomeFraction extends BaseMvpFraction<HomePresenter> implements Home
 
     private List<ArticleListBean> mArticleListBean;
     private int page = 0;
+    private AbilitySlice mAbilitySlice;
+
+    public HomeFraction(AbilitySlice abilitySlice) {
+        this.mAbilitySlice = abilitySlice;
+    }
 
     @Override
     public int getLayoutId() {
@@ -67,7 +78,17 @@ public class HomeFraction extends BaseMvpFraction<HomePresenter> implements Home
 //        mListContainer.setNumColumns(1);
         mHomeProvider = new HomeProvider(this);
         mListContainer.setItemProvider(mHomeProvider);
-
+        mListContainer.setItemClickedListener((listContainer, component1, i, l) -> {
+            final Intent intent = new Intent();
+            intent.setParam(Consts.WEB_URL, mArticleListBean.get(i).getLink());
+            Utils.info("ListBean = "+mArticleListBean.get(i).getLink());
+            mAbilitySlice.present(new CommonWebViewAbilitySlice(),intent);
+        });
+        mPageProvider.setOnItemOnClick(i -> {
+            final Intent intent = new Intent();
+            intent.setParam(Consts.WEB_URL, mList.get(i).getUrl());
+            mAbilitySlice.present(new CommonWebViewAbilitySlice(),intent);
+        });
     }
 
     @Override
@@ -165,19 +186,24 @@ public class HomeFraction extends BaseMvpFraction<HomePresenter> implements Home
 //                }else{
 //
 //                }
-                mHomeProvider.addArticleListBean(bean.getData().getDatas(),page);
-                mListContainer.getOriginalAdapter().notifyDataChanged();
                 if (page==0){
-                    mHomeRefresh.finishRefreshing();
-                }else{
-                    mHomeRefresh.finishLoadMore();
+                    if (mArticleListBean.size()>0) mArticleListBean.clear();
                 }
+                mArticleListBean.addAll(bean.getData().getDatas());
+                mHomeProvider.addArticleListBean(mArticleListBean,page);
+                mListContainer.getOriginalAdapter().notifyDataChanged();
+
 
 
 //                mArticleListBean.addAll(bean.getData().getDatas());
 //                System.out.println("Cookies:"+mArticleListBean.size());
 //                mHomeProvider.notifyDataInvalidated();
             }
+        }
+        if (page==0){
+            mHomeRefresh.finishRefreshing();
+        }else{
+            mHomeRefresh.finishLoadMore();
         }
     }
 }

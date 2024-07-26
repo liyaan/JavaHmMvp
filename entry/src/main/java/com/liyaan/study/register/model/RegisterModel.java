@@ -20,7 +20,7 @@ public class RegisterModel implements RegisterContract.Model {
 
 
     @Override
-    public Observable<BaseObjectBean<String>> register(String username, String password, String repassword) {
+    public Observable<BaseObjectBean<LoginBean>> register(String username, String password, String repassword) {
         System.out.println("MainModel login 被调用");
         return mApiService.register(username,password,repassword);
     }

@@ -19,7 +19,8 @@ public class PageSliderUtils {
         pageSlider.setDataSize(dataSize);
         pageSlider.startPlaying();
         pageSlider.addTouchEventListener();
-        setPageSliderIndicator(pageSliderIndicator,pageSlider);
+        if (pageSliderIndicator!=null)
+            setPageSliderIndicator(pageSliderIndicator,pageSlider);
     }
     private static void setPageSliderIndicator(PageSliderIndicator indicator,PageSlider pageSlider){
 

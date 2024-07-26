@@ -1,8 +1,32 @@
 {
   "string": [
     {
-      "name": "utils_library",
-      "value": "utils_library"
+      "name": "app_name",
+      "value": "SingleDateAndTimePicker"
+    },
+    {
+      "name": "picker_today",
+      "value": "今日"
+    },
+    {
+      "name": "picker_am",
+      "value": "上午"
+    },
+    {
+      "name": "picker_pm",
+      "value": "下午"
+    },
+    {
+      "name": "ok",
+      "value": "确定"
+    },
+    {
+      "name": "textColor",
+      "value": "#6E6E6E"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
     }
   ]
 }

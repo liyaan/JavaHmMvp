@@ -1,0 +1,69 @@
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:id="$+id:bottom_sheet_background"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    >
+
+    <DirectionalLayout
+        ohos:id="$+id:sheetContentLayout"
+        ohos:height="match_content"
+        ohos:width="300vp"
+        ohos:layout_alignment="vertical_center"
+        ohos:background_element="$color:white"
+        ohos:orientation="vertical"
+        >
+
+        <StackLayout
+            ohos:id="$+id:pickerTitleHeader"
+            ohos:height="50vp"
+            ohos:width="match_parent"
+            ohos:background_element="$color:picker_background"
+            ohos:bottom_margin="20vp"
+            >
+
+            <Text
+                ohos:id="$+id:sheetTitle"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:layout_alignment="center"
+                ohos:text="The title"
+                ohos:text_color="$color:white"
+                ohos:text_size="16fp"
+                />
+
+        </StackLayout>
+
+        <com.example.utils.component.timePicker.SingleDateAndTimePickerContainer
+            ohos:id="$+id:picker"
+            ohos:height="230vp"
+            ohos:width="match_parent"
+            ohos:weight="1"
+            app:picker_curved="false"
+            app:picker_cyclic="true"
+            app:picker_selectedTextColor="$color:picker_background"
+            app:picker_textSize="20sp"
+            app:picker_visibleItemCount="5"
+            />
+
+
+        <StackLayout
+            ohos:height="50vp"
+            ohos:width="match_parent"
+            ohos:top_margin="40vp"
+            >
+
+            <Text
+                ohos:id="$+id:buttonOk"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:layout_alignment="vertical_center"
+                ohos:min_width="80vp"
+                ohos:text="$string:ok"
+                ohos:text_color="$color:picker_background"
+                ohos:text_size="16fp"
+                />
+        </StackLayout>
+    </DirectionalLayout>
+</StackLayout>

@@ -54,6 +54,7 @@
         ohos:left_margin="20vp"
         ohos:text_color="#000000"
         ohos:top_margin="25vp"
+        ohos:text_input_type="pattern_password"
         ohos:basement="#000099"
         ohos:hint="请输入密码"
         />

@@ -26,14 +26,14 @@ public class RegisterPresenter extends BasePresenter<RegisterContract.View> impl
         }
         model.register(username,password,repassword)
                 .compose(RxScheduler.Obs_io_main())
-                .subscribe(new Observer<BaseObjectBean<String>>() {
+                .subscribe(new Observer<BaseObjectBean<LoginBean>>() {
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
                         mView.showLoading();
                     }
 
                     @Override
-                    public void onNext(@NonNull BaseObjectBean<String> loginBeanBaseObjectBean) {
+                    public void onNext(@NonNull BaseObjectBean<LoginBean> loginBeanBaseObjectBean) {
                         mView.onSuccess(loginBeanBaseObjectBean);
                     }
 

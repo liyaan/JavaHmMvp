@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:header_text"
+        ohos:height="70vp"
+        ohos:width="match_parent"
+        ohos:background_element="$color:color_double_header_bg"
+        ohos:left_padding="16vp"
+        ohos:text="Sample text"
+        ohos:text_alignment="vertical_center"
+        ohos:text_color="$color:color_white"
+        ohos:text_font="bold"
+        ohos:text_size="$float:headerTextSize"
+        ohos:visibility="visible" />
+
+</DependentLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/hap/res-auto"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="#f7f7f7"
+    ohos:orientation="vertical">
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:padding="10vp"
+        ohos:background_element="$color:white"
+        ohos:orientation="horizontal">
+        <com.example.utils.component.RoundImage
+            ohos:id="$+id:userPhoto"
+            ohos:width="100vp"
+            ohos:height="100vp"
+            />
+        <Text
+            ohos:id="$+id:userName"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            ohos:text="用户名称"
+            ohos:layout_alignment="vertical_center"
+            ohos:text_color="$color:black"
+            ohos:text_size="20fp"
+            ohos:left_margin="10vp"
+            />
+    </DirectionalLayout>
+    <Text
+        ohos:id="$+id:selectDataTime"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="日期选择器"
+        ohos:padding="10vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:white"
+        ohos:top_margin="2vp"
+        ohos:text_size="20fp"
+        />
+</DirectionalLayout>

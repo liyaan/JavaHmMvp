@@ -1,0 +1,62 @@
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:id="$+id:bottom_sheet_background"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:background_element="$color:white"
+  >
+
+    <DirectionalLayout
+        ohos:id="$+id:sheetContentLayout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:alignment="bottom"
+        ohos:layout_alignment="vertical_center"
+        ohos:orientation="vertical">
+
+        <StackLayout
+            ohos:height="50vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:sheetTitle"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:alignment="center"
+                ohos:layout_alignment="vertical_center"
+                ohos:left_margin="12vp"
+                ohos:min_width="80vp"
+                ohos:text="title here"
+                ohos:text_weight="700"
+                ohos:text_color="$color:picker_button_background_selected"
+                ohos:text_size="15fp"
+               />
+
+            <Text
+                ohos:id="$+id:buttonOk"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:layout_alignment="right"
+                ohos:min_width="80vp"
+                ohos:text="$string:ok"
+                ohos:text_alignment="center"
+                ohos:text_weight="700"
+                ohos:text_color="$color:picker_button_background_selected"
+                ohos:text_size="15fp"
+                />
+
+        </StackLayout>
+
+        <com.example.utils.component.timePicker.SingleDateAndTimePickerContainer
+            ohos:id="$+id:picker"
+            ohos:height="230vp"
+            ohos:width="match_parent"
+            app:picker_curved="true"
+            app:picker_cyclic="true"
+            app:picker_selectedTextColor="$color:picker_button_background_selected"
+            app:picker_textSize="15fp"
+            app:picker_visibleItemCount="7" />
+    </DirectionalLayout>
+</StackLayout>

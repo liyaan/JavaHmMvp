@@ -1,0 +1,96 @@
+{
+  "color": [
+    {
+      "name": "color_primary",
+      "value": "#3F51B5"
+    },
+    {
+      "name": "color_normal",
+      "value": "#808080"
+    },
+    {
+      "name": "color_selected",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color_tab_bg",
+      "value": "#323232"
+    },
+    {
+      "name": "color_header_bg",
+      "value": "#775599"
+    },
+    {
+      "name": "color_white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "color_double_header_bg",
+      "value": "#55AA33"
+    },
+    {
+      "name": "color_black",
+      "value": "#000000"
+    },
+    {
+      "name": "color_black_f7",
+      "value": "#f7f7f7"
+    },
+    {
+      "name": "white",
+      "value": "#ffffff"
+    },
+    {
+      "name": "green",
+      "value": "#2aa515"
+    },
+    {
+      "name": "gray",
+      "value": "#cdcdcd"
+    },
+    {
+      "name": "yellow",
+      "value": "#f4ea2a"
+    },
+    {
+      "name": "red",
+      "value": "#d4237a"
+    },
+    {
+      "name": "picker_default_text_color",
+      "value": "#FF999999"
+    },
+    {
+      "name": "picker_default_selected_text_color",
+      "value": "#ff000000"
+    },
+    {
+      "name": "picker_default_selector_color",
+      "value": "#646464"
+    },
+    {
+      "name": "picker_button_background_selected",
+      "value": "#3F51B5"
+    },
+    {
+      "name": "picker_background",
+      "value": "#3F51B5"
+    },
+    {
+      "name": "picker_background_dark",
+      "value": "#2338a7"
+    },
+    {
+      "name": "picker_button_background_innactive",
+      "value": "#BDBDBD"
+    },
+    {
+      "name": "textColor",
+      "value": "#6E6E6E"
+    },
+    {
+      "name": "gray_light",
+      "value": "#f9fafb"
+    }
+  ]
+}

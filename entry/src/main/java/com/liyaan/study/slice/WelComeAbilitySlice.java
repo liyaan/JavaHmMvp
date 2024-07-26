@@ -77,7 +77,7 @@ public class WelComeAbilitySlice extends AbilitySlice {
 //                    toastDialog.show();
      //               intent.setParam("productId",product.getProductId());
                     final String userName = mPreferences.getString(Consts.LOGIN_USERNAME,"");
-                    if (Tools.isNotNull(userName)){
+                    if (!Tools.isNotNull(userName)){
                         present(new LoginAbilitySlice(),intent);
                         terminate();
                     }else{

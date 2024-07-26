@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:layout_alignment="horizontal_center"
+        ohos:alignment="horizontal_center"
+        ohos:orientation="horizontal">
+
+        <com.example.utils.component.timePicker.widget.WheelDayPicker
+            ohos:id="$+id:daysPicker"
+            ohos:height="match_parent"
+            ohos:width="120vp"
+            ohos:left_margin="25vp"
+            ohos:right_margin="5vp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="right" />
+
+        <com.example.utils.component.timePicker.widget.WheelDayOfMonthPicker
+            ohos:id="$+id:daysOfMonthPicker"
+            ohos:height="match_parent"
+            ohos:width="50vp"
+            ohos:left_margin="5vp"
+            ohos:right_margin="5vp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="right" />
+
+        <com.example.utils.component.timePicker.widget.WheelMonthPicker
+            ohos:id="$+id:monthPicker"
+            ohos:height="match_parent"
+            ohos:width="50vp"
+            ohos:left_margin="5vp"
+            ohos:right_margin="5vp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="right" />
+
+        <com.example.utils.component.timePicker.widget.WheelYearPicker
+            ohos:id="$+id:yearPicker"
+            ohos:height="match_parent"
+            ohos:width="50vp"
+            ohos:left_margin="5vp"
+            ohos:right_margin="5vp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="right" />
+
+        <com.example.utils.component.timePicker.widget.WheelHourPicker
+            ohos:id="$+id:hoursPicker"
+            ohos:height="match_parent"
+            ohos:width="40vp"
+            ohos:left_margin="5vp"
+            ohos:right_margin="5vp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="center" />
+
+        <com.example.utils.component.timePicker.widget.WheelMinutePicker
+            ohos:id="$+id:minutesPicker"
+            ohos:height="match_parent"
+            ohos:width="40vp"
+            app:wheel_atmospheric="true"
+            app:wheel_item_align="center" />
+
+        <com.example.utils.component.timePicker.widget.WheelAmPmPicker
+            ohos:id="$+id:amPmPicker"
+            ohos:height="match_parent"
+            ohos:width="50vp"
+            app:wheel_atmospheric="true"
+            app:wheel_cyclic = "false"
+            app:wheel_item_align="center"
+            app:wheel_visible_item_count="2" />
+
+    </DirectionalLayout>
+
+    <Component
+        ohos:id="$+id:dtSelector"
+        ohos:height="20vp"
+        ohos:width="match_content"
+        ohos:alpha="0.2"
+        ohos:background_element="@color/picker_default_selector_color"
+        ohos:layout_alignment="vertical_center"
+       />
+
+    <StackLayout
+        ohos:height="40vp"
+        ohos:width="match_parent"
+        ohos:layout_alignment="vertical_center"
+        ohos:orientation="vertical"
+        >
+
+        <Component
+            ohos:id="$+id:picker_divider_1"
+            ohos:height="1vp"
+            ohos:width="match_parent"
+            ohos:background_element="$graphic:picker_divider" />
+
+        <Component
+            ohos:id="$+id:picker_divider_2"
+            ohos:height="1vp"
+            ohos:width="match_parent"
+            ohos:background_element="$graphic:picker_divider" />
+    </StackLayout>
+</StackLayout>

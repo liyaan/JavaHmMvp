@@ -7,7 +7,7 @@ import io.reactivex.rxjava3.core.Observable;
 
 public interface RegisterContract {
     interface Model {
-        Observable<BaseObjectBean<String>> register(String username, String password,String repassword);
+        Observable<BaseObjectBean<LoginBean>> register(String username, String password,String repassword);
     }
 
     interface View extends BaseView {
@@ -20,7 +20,7 @@ public interface RegisterContract {
         @Override
         void onError(String errMessage);
 
-        void onSuccess(BaseObjectBean<String> bean);
+        void onSuccess(BaseObjectBean<LoginBean> bean);
     }
 
     interface Presenter {

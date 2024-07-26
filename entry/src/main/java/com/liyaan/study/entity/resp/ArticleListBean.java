@@ -77,4 +77,5 @@ public class ArticleListBean {
     public void setSuperChapterName(String superChapterName) {
         this.superChapterName = superChapterName;
     }
+
 }

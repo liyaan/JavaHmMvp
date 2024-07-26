@@ -34,4 +34,6 @@ dependencies {
     api 'io.gitee.yandeqing:zrefreshview:1.0.3'
 
     api 'com.gitee.chinasoft_ohos:ExpansionPanel:1.0.1'
+
+//    api 'com.gitee.chinasoft_ohos:header-decor:1.0.0'
 }

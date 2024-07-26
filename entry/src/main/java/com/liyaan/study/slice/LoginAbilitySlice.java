@@ -30,7 +30,9 @@ public class LoginAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> imple
     @Override
     public void initView() {
         mTextUsername = (TextField) findComponentById(ResourceTable.Id_login_edit_account);
+        mTextUsername.setText("wqwq");
         mTextPassword = (TextField) findComponentById(ResourceTable.Id_login_edit_password);
+        mTextPassword.setText("123456");
         mLoginBtn = (Button) findComponentById(ResourceTable.Id_login_btn);
         mRegisterBtn = (Text) findComponentById(ResourceTable.Id_register_btn);
         mPresenter=new LoginPresenter();
@@ -62,7 +64,11 @@ public class LoginAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> imple
             if (bean.getData()!=null){
                 mPreferences.putString(Consts.LOGIN_USERNAME,mUsername);
                 mPreferences.putString(Consts.LOGIN_PASSWORD,mPassword);
-                mPresenter.collect(0);
+                ToastUtils.show(this,"登陆成功");
+                final Intent intent = new Intent();
+                present(new MainAbilitySlice(),intent);
+                terminate();
+//                mPresenter.collect(0);
             }
 
         }

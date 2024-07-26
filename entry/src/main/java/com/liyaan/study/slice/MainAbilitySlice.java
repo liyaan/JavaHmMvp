@@ -66,7 +66,7 @@ public class MainAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implem
     private void homeFraction() {
         hideAll();
         if (mHomeFraction == null) {
-            mHomeFraction = new HomeFraction();
+            mHomeFraction = new HomeFraction(this);
             addFraction(ResourceTable.Id_stackLayout,mHomeFraction);
         } else {
             showFraction(mHomeFraction);
@@ -77,7 +77,7 @@ public class MainAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implem
     private void hdFraction() {
         hideAll();
         if (mHdFraction == null) {
-            mHdFraction = new SchoolHdFraction();
+            mHdFraction = new SchoolHdFraction(this);
             addFraction(ResourceTable.Id_stackLayout,mHdFraction);
         } else {
             showFraction(mHdFraction);
@@ -87,7 +87,7 @@ public class MainAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implem
     private void studyFraction() {
         hideAll();
         if (mStudyFraction == null) {
-            mStudyFraction = new StudyFraction();
+            mStudyFraction = new StudyFraction(this);
             addFraction(ResourceTable.Id_stackLayout,mStudyFraction);
         } else {
             showFraction(mStudyFraction);
@@ -97,7 +97,7 @@ public class MainAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implem
     private void discoverFraction() {
         hideAll();
         if (mDiscoverFraction == null) {
-            mDiscoverFraction = new DiscoverFraction();
+            mDiscoverFraction = new DiscoverFraction(this);
             addFraction(ResourceTable.Id_stackLayout,mDiscoverFraction);
         } else {
             showFraction(mDiscoverFraction);
@@ -107,7 +107,7 @@ public class MainAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implem
     private void oneSelfFraction() {
         hideAll();
         if (mOneSelfFraction == null) {
-            mOneSelfFraction = new OneSelfFraction();
+            mOneSelfFraction = new OneSelfFraction(this);
             addFraction(ResourceTable.Id_stackLayout,mOneSelfFraction);
         } else {
             showFraction(mOneSelfFraction);
@@ -149,4 +149,5 @@ public class MainAbilitySlice extends BaseMvpAbilitySlice<LoginPresenter> implem
     public void onError(String errMessage) {
 
     }
+
 }

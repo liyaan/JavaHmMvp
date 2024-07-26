@@ -36,14 +36,12 @@ public class HomeProvider extends BaseItemProvider {
         if (articleListBean.size()>0){
             this.mArticleListBean.addAll(articleListBean);
         }
-        System.out.println("Cookies:"+articleListBean.size()+"  "+this.mArticleListBean.size());
-//        notifyDataChanged();
+
     }
 
     @Override
     public void notifyDataChanged() {
         super.notifyDataChanged();
-        System.out.println("Cookies:  "+" notifyDataChanged "+this.mArticleListBean.size()+"  "+getCount());
     }
 
     @Override

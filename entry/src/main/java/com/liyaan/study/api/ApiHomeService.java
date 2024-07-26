@@ -1,10 +1,7 @@
 package com.liyaan.study.api;
 
 import com.liyaan.study.entity.BaseObjectBean;
-import com.liyaan.study.entity.resp.ArticleDataBean;
-import com.liyaan.study.entity.resp.ArticleListBean;
-import com.liyaan.study.entity.resp.PageSliderBean;
-import com.liyaan.study.entity.resp.TreeJsonDataBean;
+import com.liyaan.study.entity.resp.*;
 import io.reactivex.rxjava3.core.Observable;
 import retrofit2.http.*;
 
@@ -20,4 +17,19 @@ public interface ApiHomeService {
 
     @GET("tree/json")
     Observable<BaseObjectBean<List<TreeJsonDataBean>>> getTreeJson();
+
+
+    @GET("harmony/index/json")
+    Observable<BaseObjectBean<HosLinkJsonBean>> getHosIndexJson();
+
+
+    @GET("article/list/{page}/json")
+    Observable<BaseObjectBean<ArticleDataBean>> getTreeJsonArticleList(@Path("page")int page,@Query("cid") int cid);
+
+
+    @GET("article/top/json")
+    Observable<BaseObjectBean<List<ArticleListBean>>> getTopArticleList();
+
+    @GET("navi/json")
+    Observable<BaseObjectBean<List<NaviJsonBean>>> getNaviJson();
 }

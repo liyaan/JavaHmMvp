@@ -1,0 +1,125 @@
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:id="$+id:bottom_sheet_background"
+    ohos:height="match_parent"
+    ohos:width="match_content">
+
+
+    <DirectionalLayout
+        ohos:id="$+id:sheetContentLayout"
+        ohos:height="match_content"
+        ohos:width="300vp"
+        ohos:background_element="$color:white"
+        ohos:layout_alignment="center"
+        ohos:alignment="horizontal_center"
+        ohos:orientation="vertical">
+
+        <StackLayout
+            ohos:id="$+id:sheetTitleLayout"
+            ohos:height="45vp"
+            ohos:width="match_parent">
+
+            <Text
+                ohos:id="$+id:sheetTitle"
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:background_element="$color:picker_background"
+                ohos:layout_alignment="center"
+                ohos:text="The title"
+                ohos:text_alignment="center"
+                ohos:text_color="$color:white"
+                ohos:text_size="22fp" />
+
+        </StackLayout>
+
+        <DirectionalLayout
+            ohos:height="40vp"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:buttonTab0"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:background_element="$graphic:double_date_picker_button_background_selector"
+                ohos:text="0"
+                ohos:text_color="$color:picker_button_background_innactive"
+                ohos:text_size="18fp"
+                ohos:weight="1" />
+
+            <Button
+                ohos:id="$+id:buttonTab1"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:background_element="$graphic:double_date_picker_button_background_selector"
+                ohos:text="1"
+                ohos:text_color="$color:picker_button_background_innactive"
+                ohos:text_size="18fp"
+                ohos:weight="1" />
+
+        </DirectionalLayout>
+
+        <StackLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:top_margin="20vp">
+
+            <StackLayout
+                ohos:id="$+id:tab0"
+                ohos:height="match_content"
+                ohos:width="match_parent">
+
+                <com.example.utils.component.timePicker.SingleDateAndTimePickerContainer
+                    ohos:id="$+id:picker_tab_3"
+                    ohos:height="170vp"
+                    ohos:width="match_parent"
+                    ohos:weight="1"
+                    app:picker_curved="false"
+                    app:picker_cyclic="true"
+                    app:picker_selectedTextColor="$color:picker_background"
+                    app:picker_textSize="15fp"
+                    app:picker_visibleItemCount="5" />
+
+            </StackLayout>
+
+            <StackLayout
+                ohos:id="$+id:tab1"
+                ohos:height="match_content"
+                ohos:width="match_parent">
+
+                <com.example.utils.component.timePicker.SingleDateAndTimePickerContainer
+                    ohos:id="$+id:picker_tab_4"
+                    ohos:height="170vp"
+                    ohos:width="match_parent"
+                    app:picker_curved="false"
+                    app:picker_cyclic="true"
+                    app:picker_selectedTextColor="$color:picker_background"
+                    app:picker_textSize="15fp"
+                    app:picker_visibleItemCount="5" />
+
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout
+            ohos:height="50vp"
+            ohos:width="match_parent"
+           >
+
+            <Text
+                ohos:id="$+id:buttonOk"
+                ohos:height="match_parent"
+                ohos:width="match_content"
+                ohos:text_alignment="center"
+                ohos:layout_alignment="right|vertical_center"
+                ohos:left_padding="20vp"
+                ohos:right_padding="20vp"
+                ohos:text="$string:ok"
+                ohos:text_color="$color:picker_background"
+                ohos:text_weight="700"
+                ohos:text_size="15fp" />
+
+        </StackLayout>
+
+    </DirectionalLayout>
+</StackLayout>

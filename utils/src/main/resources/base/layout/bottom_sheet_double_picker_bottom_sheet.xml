@@ -1,0 +1,105 @@
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    xmlns:app="http://schemas.ohos.com/apk/res-auto"
+    ohos:id="$+id:bottom_sheet_background"
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    >
+
+    <DirectionalLayout
+        ohos:id="$+id:sheetContentLayout"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:layout_alignment="vertical_center"
+        ohos:background_element="@ohos:color/white"
+        ohos:orientation="vertical"
+        >
+
+        <DirectionalLayout
+            ohos:width="match_parent"
+            ohos:height="50vp"
+            ohos:orientation="horizontal"
+            >
+
+            <Button
+                ohos:id="$+id:buttonTab0"
+                ohos:width="0vp"
+                ohos:height="match_parent"
+                ohos:weight="1"
+                ohos:background_element="$graphic:double_date_picker_button_background_selector_ios"
+                ohos:text="0"
+                ohos:text_size="25fp"
+                ohos:text_color="#0000FF"
+                />
+            <Button
+                ohos:id="$+id:buttonTab1"
+                ohos:width="0vp"
+                ohos:height="match_parent"
+                ohos:weight="1"
+                ohos:background_element="$graphic:double_date_picker_button_background_selector_ios"
+                ohos:text="1"
+                ohos:text_color="#0000FF"
+                ohos:text_size="25fp"
+                />
+
+        </DirectionalLayout>
+
+        <StackLayout
+            ohos:id="$+id:tab_parent"
+            ohos:width="match_parent"
+            ohos:height="match_content"
+            >
+            <StackLayout
+                ohos:id="$+id:tab0"
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                >
+                <com.example.utils.component.timePicker.SingleDateAndTimePickerContainer
+                    ohos:id="$+id:picker_tab_0"
+                    ohos:width="match_parent"
+                    ohos:height="230vp"
+                    app:picker_curved="true"
+                    app:picker_cyclic="true"
+                    app:picker_textSize="15fp"
+                    app:picker_visibleItemCount="7"
+                    app:picker_selectedTextColor="$color:picker_button_background_selected"
+                    />
+
+            </StackLayout>
+
+            <StackLayout
+                ohos:id="$+id:tab1"
+                ohos:width="match_parent"
+                ohos:height="match_content"
+                >
+
+                <com.example.utils.component.timePicker.SingleDateAndTimePickerContainer
+                    ohos:id="$+id:picker_tab_1"
+                    ohos:width="match_parent"
+                    ohos:height="230vp"
+                    app:picker_curved="true"
+                    app:picker_cyclic="true"
+                    app:picker_textSize="15fp"
+                    app:picker_visibleItemCount="7"
+                    app:picker_selectedTextColor="$color:picker_button_background_selected"
+                    />
+
+
+            </StackLayout>
+        </StackLayout>
+
+        <Button
+            ohos:id="$+id:buttonOk"
+            ohos:width="match_parent"
+            ohos:height="50vp"
+            ohos:text_alignment="horizontal_center"
+            ohos:weight="1"
+            ohos:text="$string:ok"
+            ohos:text_color="$color:picker_button_background_selected"
+            ohos:text_size="25fp"
+            ohos:text_weight="700"
+            ohos:background_element="$graphic:double_date_picker_button_background_selector_ios"
+            />
+
+    </DirectionalLayout>
+</StackLayout>

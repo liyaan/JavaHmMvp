@@ -1,0 +1,28 @@
+{
+  "float": [
+    {
+      "name": "itemTextSize",
+      "value": "18fp"
+    },
+    {
+      "name": "headerTextSize",
+      "value": "22fp"
+    },
+    {
+      "name": "itemHeight",
+      "value": "70vp"
+    },
+    {
+      "name": "itemPadding",
+      "value": "16vp"
+    },
+    {
+      "name": "headerNumSize",
+      "value": "40fp"
+    },
+    {
+      "name": "stickyHeaderHeight",
+      "value": "40vp"
+    }
+  ]
+}

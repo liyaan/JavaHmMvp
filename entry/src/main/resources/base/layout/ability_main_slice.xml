@@ -30,7 +30,7 @@
             ohos:width="match_parent"
             ohos:height="match_parent"
             ohos:theme="$pattern:base_radio"
-            ohos:text="家校互动"
+            ohos:text="鸿蒙专区"
             ohos:element_top="$graphic:tab_button_hd"
             />
 

@@ -12,7 +12,7 @@ public abstract class BaseAbilitySlice extends AbilitySlice {
             super.setUIContent(getLayoutId());
         }
         initView();
-
+        onStartIntent(intent);
     }
 
     @Override
@@ -28,9 +28,15 @@ public abstract class BaseAbilitySlice extends AbilitySlice {
     @Override
     protected void onStop() {
         super.onStop();
+        onBaseStop();
     }
 
+    public void onStartIntent(Intent intent) {
 
+    }
+    public void onBaseStop() {
+
+    }
     /**
      * 设置布局
      *

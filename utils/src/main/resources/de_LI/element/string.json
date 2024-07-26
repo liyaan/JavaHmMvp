@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "SingleDateAndTimePicker"
+    },
+    {
+      "name": "picker_today",
+      "value": "Heute"
+    },
+    {
+      "name": "picker_am",
+      "value": "AM"
+    },
+    {
+      "name": "picker_pm",
+      "value": "PM "
+    },
+    {
+      "name": "ok",
+      "value": "OK"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Phone_Empty Feature Ability"
+    }
+  ]
+}

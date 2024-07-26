@@ -65,7 +65,7 @@ public class RegisterAbilitySlice extends BaseMvpAbilitySlice<RegisterPresenter>
     }
 
     @Override
-    public void onSuccess(BaseObjectBean<String> bean) {
+    public void onSuccess(BaseObjectBean<LoginBean> bean) {
 
         if (bean.getErrorCode()==0){
             ToastUtils.oneShow(this,"注册成功",TextAlignment.CENTER);
