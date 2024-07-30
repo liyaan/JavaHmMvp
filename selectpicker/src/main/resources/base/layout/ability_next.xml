@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    ohos:background_element="#ffffff"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="50vp"
+        ohos:background_element="#00AE85"
+        ohos:alignment="center"
+        ohos:orientation="horizontal"
+        ohos:padding="10vp">
+
+        <Text
+            ohos:id="$+id:nest_back"
+            ohos:width="80vp"
+            ohos:height="match_parent"
+            ohos:text_alignment="vertical_center"
+            ohos:text="返回"
+            ohos:text_size="15fp"
+            ohos:text_color="#ffffff"/>
+
+        <Text
+            ohos:width="0"
+            ohos:height="match_parent"
+            ohos:left_margin="-45vp"
+            ohos:weight="1"
+            ohos:text_alignment="center"
+            ohos:text="布局选择器"
+            ohos:text_size="15fp"
+            ohos:text_color="#ffffff"/>
+
+        <Text
+            ohos:id="$+id:nest_carnumber"
+            ohos:width="match_content"
+            ohos:height="match_parent"
+            ohos:text_alignment="vertical_center"
+            ohos:text="车牌"
+            ohos:text_size="15fp"
+            ohos:text_color="#ffffff"/>
+
+    </DirectionalLayout>
+
+    <Text
+        ohos:id="$+id:wheelview_tips"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:top_margin="10vp"
+        ohos:text_alignment="center"
+        ohos:text_size="12fp"
+        ohos:text="ohospickers"/>
+
+    <StackLayout
+        ohos:id="$+id:wheelview_single"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text_alignment="center"/>
+
+    <DirectionalLayout
+        ohos:id="$+id:wheelview_container"
+        ohos:width="match_parent"
+        ohos:height="match_parent"
+        ohos:alignment="center"
+        ohos:orientation="vertical"/>
+
+</DirectionalLayout>

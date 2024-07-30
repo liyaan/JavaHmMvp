@@ -39,4 +39,48 @@
         ohos:top_margin="2vp"
         ohos:text_size="20fp"
         />
+    <Text
+        ohos:id="$+id:selectPicker"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="选择器"
+        ohos:padding="10vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:white"
+        ohos:top_margin="2vp"
+        ohos:text_size="20fp"
+        />
+    <Text
+        ohos:id="$+id:selectCalMw"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="日历月视图和周视图"
+        ohos:padding="10vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:white"
+        ohos:top_margin="2vp"
+        ohos:text_size="20fp"
+        />
+    <Text
+        ohos:id="$+id:stickyScrollView"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="粘连头部,悬停底部"
+        ohos:padding="10vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:white"
+        ohos:top_margin="2vp"
+        ohos:text_size="20fp"
+        />
+    <Text
+        ohos:id="$+id:scrollViewList"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:text="滚动嵌套列表"
+        ohos:padding="10vp"
+        ohos:text_color="$color:black"
+        ohos:background_element="$color:white"
+        ohos:top_margin="2vp"
+        ohos:text_size="20fp"
+        />
 </DirectionalLayout>

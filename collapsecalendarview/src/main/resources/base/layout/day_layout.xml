@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wefika.calendar.widget.DayView
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:text_alignment="center"
+    ohos:text_size="26fp"
+    ohos:text_color="#626262"
+    ohos:top_padding="4vp"
+    ohos:bottom_padding="4vp">
+
+</com.wefika.calendar.widget.DayView>

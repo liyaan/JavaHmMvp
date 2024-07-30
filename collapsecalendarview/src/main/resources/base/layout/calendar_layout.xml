@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+
+    <StackLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:top_margin="8vp"
+        ohos:bottom_margin="8vp">
+
+        <DirectionalLayout
+            ohos:id="$+id:header"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:left_margin="16vp"
+            ohos:right_margin="16vp"
+            ohos:orientation="horizontal">
+
+            <Image
+                ohos:id="$+id:prev"
+                ohos:height="match_content"
+                ohos:width="40vp"
+                ohos:image_src="$media:ic_arrow_left_normal"/>
+
+            <Text
+                ohos:id="$+id:title"
+                ohos:height="match_parent"
+                ohos:width="0vp"
+                ohos:text_alignment="center"
+                ohos:text_size="20fp"
+                ohos:weight="1"/>
+
+            <Image
+                ohos:id="$+id:next"
+                ohos:height="match_content"
+                ohos:width="40vp"
+                ohos:image_src="$media:ic_arrow_right_normal"/>
+
+        </DirectionalLayout>
+
+        <Text
+            ohos:id="$+id:selection_title"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:min_height="48vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#ffffff"
+            ohos:text_size="20fp"
+            ohos:visibility="hide"/>
+    </StackLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:days"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal">
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+        <Text
+            ohos:height="match_content"
+            ohos:width="0vp"
+            ohos:text_alignment="center"
+            ohos:text_color="#626262"
+            ohos:text_size="10fp"
+            ohos:weight="1"/>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:weeks"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:top_margin="-16vp"
+        ohos:top_padding="16vp"
+        ohos:orientation="vertical">
+
+  <!--      <com.wefika.calendar.widget.WeekView
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="2vp">
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+        </com.wefika.calendar.widget.WeekView>
+
+        <com.wefika.calendar.widget.WeekView
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="2vp">
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+        </com.wefika.calendar.widget.WeekView>
+
+        <com.wefika.calendar.widget.WeekView
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="2vp">
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+        </com.wefika.calendar.widget.WeekView>
+
+        <com.wefika.calendar.widget.WeekView
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="2vp">
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+        </com.wefika.calendar.widget.WeekView>
+
+        <com.wefika.calendar.widget.WeekView
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="2vp">
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+        </com.wefika.calendar.widget.WeekView>
+
+        <com.wefika.calendar.widget.WeekView
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:bottom_padding="2vp">
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+
+            <com.wefika.calendar.widget.DayView
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:bottom_padding="4vp"
+                ohos:text="18fp"
+                ohos:text_alignment="center"
+                ohos:text_color="#626262"
+                ohos:top_padding="4vp">
+
+            </com.wefika.calendar.widget.DayView>
+        </com.wefika.calendar.widget.WeekView>-->
+
+
+
+<!--        <include-->
+<!--            ohos:height="match_content"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:laypout="$layout:week_layout"/>-->
+
+<!--        <include-->
+<!--            ohos:height="match_content"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:laypout="$layout:week_layout"/>-->
+
+<!--        <include-->
+<!--            ohos:height="match_content"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:laypout="$layout:week_layout"/>-->
+
+<!--        <include-->
+<!--            ohos:height="match_content"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:laypout="$layout:week_layout"/>-->
+
+<!--        <include-->
+<!--            ohos:height="match_content"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:laypout="$layout:week_layout"/>-->
+
+<!--        <include-->
+<!--            ohos:height="match_content"-->
+<!--            ohos:width="match_parent"-->
+<!--            ohos:laypout="$layout:week_layout"/>-->
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

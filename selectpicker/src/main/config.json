@@ -1,0 +1,26 @@
+{
+  "app": {
+    "bundleName": "com.liyaan.study",
+    "vendor": "example",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.liyaan.selectpicker",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "selectpicker",
+      "moduleType": "har"
+    }
+  }
+}

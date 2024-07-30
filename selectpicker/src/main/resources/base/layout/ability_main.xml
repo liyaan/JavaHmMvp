@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:label_tv"
+        ohos:height="50vp"
+        ohos:width="match_parent"
+        ohos:background_element="#00AE85"
+        ohos:text_alignment="center"
+        ohos:text="ohospickers"
+        ohos:text_size="20fp"
+        ohos:text_color="#ffffffff"
+        />
+
+    <ScrollView
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:background_element="#fff">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="vertical"
+            ohos:padding="10vp">
+
+            <Button
+                ohos:id="$+id:nest_view"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="布局选择器"
+                />
+
+            <Button
+                ohos:id="$+id:animation_style"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="窗口动画(基于XML)"
+                />
+
+            <Button
+                ohos:id="$+id:animator"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="窗口动画（基于Java）"
+                />
+
+            <Button
+                ohos:id="$+id:date_range_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="日期范围选择"
+                />
+
+            <Button
+                ohos:id="$+id:year_month_day_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="年月日选择"
+                />
+
+            <Button
+                ohos:id="$+id:year_month_day_time_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="年月日时间选择"
+                />
+
+            <Button
+                ohos:id="$+id:year_month_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="年月选择"
+                />
+
+            <Button
+                ohos:id="$+id:month_day_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="月日选择"
+                />
+
+            <Button
+                ohos:id="$+id:time_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="时间选择"
+                />
+
+            <Button
+                ohos:id="$+id:option_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="单项选择"
+                />
+
+            <Button
+                ohos:id="$+id:linkage_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="二三级联动选择"
+                />
+
+            <Button
+                ohos:id="$+id:constellation_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="星座选择"
+                />
+
+            <Button
+                ohos:id="$+id:number_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="数字选择（如身高、体重、年龄）"
+                />
+
+            <Button
+                ohos:id="$+id:address_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="地址选择（包括省级、地级、县级）"
+                />
+
+            <Button
+                ohos:id="$+id:address2_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="地址选择（只包括地级、县级）"
+                />
+
+            <Button
+                ohos:id="$+id:address3_picker"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:background_element="$graphic:bg_green_radius5"
+                ohos:text_color="#fff"
+                ohos:text_size="15fp"
+                ohos:padding="10vp"
+                ohos:top_margin="10vp"
+                ohos:text="地址选择（只包括省级、地级）"
+                />
+        </DirectionalLayout>
+    </ScrollView>
+</DirectionalLayout>

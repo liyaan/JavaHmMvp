@@ -5,9 +5,13 @@ import com.example.utils.component.RoundImage;
 import com.example.utils.component.timePicker.SingleDateAndTimePickerContainer;
 import com.example.utils.component.timePicker.dialog.SingleDateAndTimePickerDialog;
 import com.example.utils.log.UtilLog;
+import com.liyaan.selectpicker.MainAbility;
 import com.liyaan.study.ResourceTable;
 import com.liyaan.study.common.Consts;
 import com.liyaan.study.demo.SelectDataTimeAbilitySlice;
+import com.liyaan.study.slice.CollapseCalendarViewAbilitySlice;
+import com.liyaan.study.slice.ScrollViewToListAbilitySlice;
+import com.liyaan.study.slice.StickyScrollViewAbilitySlice;
 import com.ryan.ohos.extension.TextUtils;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
@@ -25,6 +29,10 @@ public class OneSelfFraction extends BaseMvpFraction {
     private RoundImage mUserPhoto;
     private Text mUserName;
     private Text mSelectDataTime;
+    private Text mSelectPicker;
+    private Text mSelectCalMw;
+    private Text mStickyScrollView;
+    private Text mScrollViewList;
 
     private AbilitySlice mAbilitySlice;
 
@@ -41,6 +49,10 @@ public class OneSelfFraction extends BaseMvpFraction {
         mUserPhoto = (RoundImage) component.findComponentById(ResourceTable.Id_userPhoto);
         mUserName = (Text) component.findComponentById(ResourceTable.Id_userName);
         mSelectDataTime = (Text) component.findComponentById(ResourceTable.Id_selectDataTime);
+        mSelectPicker = (Text) component.findComponentById(ResourceTable.Id_selectPicker);
+        mSelectCalMw = (Text) component.findComponentById(ResourceTable.Id_selectCalMw);
+        mStickyScrollView = (Text) component.findComponentById(ResourceTable.Id_stickyScrollView);
+        mScrollViewList = (Text) component.findComponentById(ResourceTable.Id_scrollViewList);
         mUserPhoto.setPixelMapAndCircle(ResourceTable.Media_icon);
     }
 
@@ -57,6 +69,34 @@ public class OneSelfFraction extends BaseMvpFraction {
             public void onClick(Component component) {
                 Intent intent = new Intent();
                 mAbilitySlice.present(new SelectDataTimeAbilitySlice(),intent);
+            }
+        });
+        mSelectPicker.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent = new Intent();
+                mAbilitySlice.present(new MainAbility(),intent);
+            }
+        });
+        mSelectCalMw.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent = new Intent();
+                mAbilitySlice.present(new CollapseCalendarViewAbilitySlice(),intent);
+            }
+        });
+        mStickyScrollView.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent = new Intent();
+                mAbilitySlice.present(new StickyScrollViewAbilitySlice(),intent);
+            }
+        });
+        mScrollViewList.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent = new Intent();
+                mAbilitySlice.present(new ScrollViewToListAbilitySlice(),intent);
             }
         });
     }

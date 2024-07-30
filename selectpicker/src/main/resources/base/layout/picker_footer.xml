@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:width="match_parent"
+    ohos:height="match_content"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <Component
+        ohos:width="match_parent"
+        ohos:height="1vp"
+        ohos:top_margin="10vp"
+        ohos:background_element="#FFEEEEEE"/>
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:margin="10vp"
+        ohos:alignment="horizontal_center"
+        ohos:orientation="horizontal">
+
+        <Button
+            ohos:id="$+id:picker_submit"
+            ohos:width="match_content"
+            ohos:height="match_content"
+            ohos:text="submit"/>
+
+        <Button
+            ohos:id="$+id:picker_cancel"
+            ohos:width="match_content"
+            ohos:height="match_content"
+            ohos:left_margin="10vp"
+            ohos:text="cancel"
+            ohos:text_color="#FFFF0000"/>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

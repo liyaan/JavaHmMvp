@@ -1,5 +1,5 @@
-apply plugin: 'com.huawei.ohos.hap'
-apply plugin: 'com.huawei.ohos.decctest'
+apply plugin: 'com.huawei.ohos.library'
+
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides-V3/ide_debug_device-0000001053822404-V3#section1112183053510
 ohos {
     compileSdkVersion 6
@@ -17,14 +17,8 @@ ohos {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
-    implementation project(path: ':selectpicker')
-    implementation project(path: ':collapsecalendarview')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.13.1'
-    ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.400'
-
-
-}
-decc {
-    supportType = ['html', 'xml']
+    api 'org.apache.commons:commons-lang3:3.3.2'
+    api 'joda-time:joda-time:2.10.10'
 }

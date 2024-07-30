@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:width="match_parent"
+    ohos:height="match_content"
+    ohos:background_element="white"
+    ohos:alignment="center"
+    ohos:orientation="horizontal"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <com.example.utils.ohospickers.widget.WheelView
+        ohos:id="$+id:wv_year"
+        ohos:width="0vp"
+        ohos:height="match_content"
+        ohos:weight="1.5"/>
+
+    <com.example.utils.ohospickers.widget.WheelView
+        ohos:id="$+id:wv_start_month"
+        ohos:width="0vp"
+        ohos:height="match_content"
+        ohos:weight="1"/>
+
+    <com.example.utils.ohospickers.widget.WheelView
+        ohos:id="$+id:wv_start_day"
+        ohos:width="0vp"
+        ohos:height="match_content"
+        ohos:weight="1"/>
+
+    <com.example.utils.ohospickers.widget.WheelView
+        ohos:id="$+id:wv_line"
+        ohos:width="19vp"
+        ohos:height="match_content"
+        ohos:left_padding="6vp"
+        />
+
+    <com.example.utils.ohospickers.widget.WheelView
+        ohos:id="$+id:wv_end_month"
+        ohos:width="0vp"
+        ohos:height="match_content"
+        ohos:weight="1"/>
+
+    <com.example.utils.ohospickers.widget.WheelView
+        ohos:id="$+id:wv_end_day"
+        ohos:width="0vp"
+        ohos:height="match_content"
+        ohos:weight="1"/>
+</DirectionalLayout>

@@ -35,5 +35,7 @@ dependencies {
 
     api 'com.gitee.chinasoft_ohos:ExpansionPanel:1.0.1'
 
+    api 'com.alibaba:fastjson:1.2.48'
+
 //    api 'com.gitee.chinasoft_ohos:header-decor:1.0.0'
 }

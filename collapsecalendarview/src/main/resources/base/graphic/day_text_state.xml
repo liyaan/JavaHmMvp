@@ -1,0 +1,8 @@
+<state-container
+    xmlns:ohos="http://schemas.huawei.com/res/ohos">
+
+    <item
+        ohos:state="component_state_selected"
+        ohos:element="#00aeef"/>
+
+</state-container>

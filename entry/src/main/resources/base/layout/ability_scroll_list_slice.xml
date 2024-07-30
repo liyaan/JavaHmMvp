@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liyaan.study.component.CustomScrollView
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+   <DirectionalLayout
+       ohos:width="match_parent"
+       ohos:height="match_content"
+       ohos:orientation="vertical">
+       <Image
+           ohos:width="match_parent"
+           ohos:height="100vp"
+           ohos:image_src="$media:a6"/>
+       <Image
+           ohos:width="match_parent"
+           ohos:height="100vp"
+           ohos:image_src="$media:a6"/>
+       <ListContainer
+           ohos:width="match_parent"
+           ohos:height="match_parent"
+           ohos:id="$+id:listContainer"/>
+   </DirectionalLayout>
+</com.liyaan.study.component.CustomScrollView>
+
